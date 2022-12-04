@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Css global -->
+		<link rel="stylesheet" href="/globalStyle.css" />
+		<!-- Css da pagina -->
+		<link rel="stylesheet" href="/styles/orçamento.css" />
+		<!-- Icones -->
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<!-- FavIcon -->
+		<link
+			rel="shortcut icon"
+			href="/images/zyro-image-removebg-re.ico"
+			type="image/x-icon"
+		/>
+		<title>Faça seu Orçamento</title>
+	</head>
+	<body>
+		<header>
+			<img src="/images/zyro-image-removebg re.png" alt="A.calú" />
+		</header>
+		<nav>
+			<!-- Menu -->
+			<a href="/index.html">Inicio</a>
+			<div id="serviços">
+				<a> Serviços</a>
+				<!-- Menu Dropdown -->
+				<div id="dropdown">
+					<a href="/pages/serviço.html">Serviços</a>
+					<a href="#">Serviços Prestados</a>
+				</div>
+			</div>
+			<a href="/pages/acesso.html">Suporte Remoto</a>
+			<!-- Menu Mobile -->
+			<div id="menuMobile">
+				<i onclick="abrirMenu()" class="fi fi-rr-menu-burger"></i>
+				<a class="orçamento"></a>
+			</div>
+		</nav>
+		<div id="menuAtivo">
+			<a id="fechar" onclick="fecharMenu()"> <i class="fi fi-br-x"></i></a>
+			<div id="conteudo">
+				<a href="/index.html">Inicio</a>
+				<a id="serviçosMobile">Serviços</a>
+				<a class="serviçoFilho" href="/pages/serviço.html">Serviços</a>
+				<a class="serviçoFilho" href="#">Serviços Prestados</a>
+				<a href="/pages/acesso.html">Suporte Remoto</a>
+			</div>
+		</div>
+		<main>
+			<!-- Call to action -->
+			<div id="chamada">
+				<h1>Faça Seu Orçamento</h1>
+				<h2>A A.Calú é a melhor escolha para a segurança do seu negocio</h2>
+				<p>
+					Preencha o Campo abaixo ou solicite seu
+					<strong>Orçamento via WhatsApp </strong>
+				</p>
+				<a
+					href="https://api.whatsapp.com/send?phone=5511972941977&text=Ol%C3%A1%2C%20Gostaria%20de%20um%20Or%C3%A7amento%20"
+					>WhatsApp</a
+				>
+			</div>
+			<!-- Formulario -->
+			<div id="formulario">
+				<h1>Preencha o Campo Abaixo</h1>
+				<hr />
+				<!-- Campo dos formularios -->
+				<form method="post" action="https://formsubmit.co/prichukalu@gmail.com">
+					<!-- Configurações do FormSubmit -->
+					<input
+						type="hidden"
+						name="_next"
+						value="http://127.0.0.1:5500/pages/obrigado.html"
+					/>
+					<input type="hidden" name="_captcha" value="false" />
+					<input type="hidden" name="_template" value="table" />
+					<input type="text" name="_honey" style="display: none" />
+					<!-- Campos do Formulario -->
+					<div id="form1">
+						<div class="input">
+							<label for="nome">Nome</label>
+							<input
+								type="text"
+								id="nome"
+								name="nome"
+								placeholder="Ex: Anderson"
+								maxlength="100"
+								required
+							/>
+						</div>
+						<div class="input">
+							<label for="sobreNome">Sobre Nome</label>
+							<input
+								type="text"
+								id="sobreNome"
+								name="sobreNome"
+								placeholder="Ex: Calú"
+								maxlength="100"
+								required
+							/>
+						</div>
+					</div>
+					<div id="form2">
+						<div class="input">
+							<label for="telefone">Telefone</label>
+							<input
+								type="tel"
+								id="telefone"
+								name="telefone"
+								placeholder="Ex: +55 (11)97176-6534"
+								maxlength="100"
+								required
+							/>
+						</div>
+						<div class="input">
+							<label for="email">E-Mail</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Ex: Exemplo@gmail.com"
+								maxlength="100"
+								required
+							/>
+						</div>
+					</div>
+					<div id="form3">
+						<div class="input2">
+							<label for="endereço">Endereço</label>
+							<input
+								type="text"
+								id="endereço"
+								name="endereço"
+								placeholder="Ex: Rua Clara Ligieri da Silva - Nº 777 Jundiaí - SP"
+								maxlength="400"
+								required
+							/>
+						</div>
+					</div>
+					<!-- Area dos Chackboxs -->
+					<h1>Serviços</h1>
+					<h2>Escolha o Tipo de Serviço</h2>
+					<hr />
+					<div id="check">
+						<div class="checkbox">
+							<label for="alarmes">Alarmes</label>
+							<input type="checkbox" id="alarmes" name="alarmes" />
+						</div>
+						<div class="checkbox">
+							<label for="cameras">Câmeras</label>
+							<input type="checkbox" id="cameras" name="cameras" />
+						</div>
+						<div class="checkbox">
+							<label for="automocao">Automoção</label>
+							<input type="checkbox" id="automocao" name="automocao" />
+						</div>
+					</div>
+					<div id="check2">
+						<div class="checkbox">
+							<label for="c.acesso">Controle de Acesso</label>
+							<input type="checkbox" id="c.acesso" name="c.acesso" />
+						</div>
+						<div class="checkbox">
+							<label for="outros">Outros</label>
+							<input type="checkbox" id="outros" name="outros" />
+						</div>
+					</div>
+					<!-- Text Area -->
+					<h1 style="margin-top: 25px">Deixe seu Comentario</h1>
+					<h2>Deixe um Breve Comentario Sobre a Sua Necessidade</h2>
+					<hr />
+					<label hidden for="mensagem"></label>
+					<textarea
+						maxlength="1000"
+						cols="40"
+						rows="10"
+						name="mensagem"
+						placeholder="Ex: A minha empresa precisa que a A.Calú ofereça Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut varius dolor. Pellentesque sed lacinia felis."
+						requird
+					></textarea>
+					<!-- Enviar -->
+					<input type="submit" id="enviar" />
+				</form>
+			</div>
+		</main>
+		<!-- Rodapé -->
+		<footer>
+			<p>© 2019 Acalu Segurança Eletrônica</p>
+			<div id="redeSocial">
+				<a
+					href="https://www.instagram.com/calu_anderson____/?next=%2F"
+					target="_blank"
+					><i class="fi fi-brands-instagram"></i
+				></a>
+				<a href="https://www.facebook.com/www.acalu.com.br/" target="_blank"
+					><i class="fi fi-brands-facebook"></i
+				></a>
+			</div>
+		</footer>
+		<!-- Script -->
+		<script src="/js/script.js"></script>
+	</body>
+</html>

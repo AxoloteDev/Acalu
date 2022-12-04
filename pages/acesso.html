@@ -1,0 +1,136 @@
+<!-- inicioGlobal -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Css global -->
+		<link rel="stylesheet" href="/globalStyle.css" />
+		<!-- Css da pagina -->
+		<link rel="stylesheet" href="/styles/acesso.css" />
+		<!-- Css do SwiperJS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+		/>
+		<!-- Icones -->
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<!-- FavIcon -->
+		<link
+			rel="shortcut icon"
+			href="/images/zyro-image-removebg-re.ico"
+			type="image/x-icon"
+		/>
+		<title>A.Calú</title>
+	</head>
+	<body>
+		<header>
+			<img src="/images/zyro-image-removebg re.png" alt="A.calú" />
+		</header>
+		<nav>
+			<!-- Menu -->
+			<a href="/index.html">Inicio</a>
+			<div id="serviços">
+				<a> Serviços</a>
+				<!-- Menu Dropdown -->
+				<div id="dropdown">
+					<a href="/pages/serviço.html">Serviços</a>
+					<a href="#">Serviços Prestados</a>
+				</div>
+			</div>
+			<a href="#">Suporte Remoto</a>
+			<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			<!-- Menu Mobile -->
+			<div id="menuMobile">
+				<i onclick="abrirMenu()" class="fi fi-rr-menu-burger"></i>
+				<a class="orçamento" href="/pages/orçamento.html"></a>
+			</div>
+		</nav>
+		<div id="menuAtivo">
+			<a id="fechar" onclick="fecharMenu()"> <i class="fi fi-br-x"></i></a>
+			<div id="conteudo">
+				<a href="/index.html">Inicio</a>
+				<a id="serviçosMobile">Serviços</a>
+				<a class="serviçoFilho" href="/pages/serviço.html">Serviços</a>
+				<a class="serviçoFilho" href="#">Serviços Prestados</a>
+				<a href="#">Suporte Remoto</a>
+				<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			</div>
+		</div>
+		<!-- fimGlobal -->
+		<!-- Conteudo Piincipal -->
+		<main>
+			<!-- Icone do WhatsApp -->
+			<a
+				href="https://api.whatsapp.com/send?phone=5511972941977&text=Ol%C3%A1%2C%20Gostaria%20de%20um%20Or%C3%A7amento%20"
+				><span id="whats"><i class="fi fi-brands-whatsapp"></i></span
+			></a>
+			<!-- Informações -->
+			<div id="info">
+				<h1>Suporte Remoto</h1>
+				<h2>Faça o download e obtenha auxilio a distancia</h2>
+				<p>
+					Buscando melhorar a melhor experiencia aos seus clientes a A.Calú oferece
+					uma forma de auxiliar a resolução da suas nescessidades a distancia.
+				</p>
+			</div>
+			<!-- Area de download -->
+			<div id="download">
+				<h1>Download</h1>
+				<img src="/images/download.jfif" />
+				<p>
+					Clique no Botão para fazer Download do Acesso remoto no Site oficial
+					disponivel para varias plataformas.
+				</p>
+				<a href="https://www.teamviewer.com/pt-br/download/windows/" target="_blank"
+					>Download</a
+				>
+			</div>
+			<!-- Icones -->
+			<div id="icones">
+				<img src="/images/Frame 1.png" />
+				<img src="/images/Frame 2.png" />
+				<img src="/images/Frame 3.png" />
+			</div>
+			<div id="iconesmobile">
+				<img src="/images/c1.png" />
+				<img src="/images/c2.png" />
+			</div>
+			<div id="botão">
+				<a href="/pages/orçamento.html">Orçamento</a>
+			</div>
+		</main>
+		<!-- Rodapé -->
+		<footer>
+			<p>© 2019 Acalu Segurança Eletrônica</p>
+			<div id="redeSocial">
+				<a
+					href="https://www.instagram.com/calu_anderson____/?next=%2F"
+					target="_blank"
+					><i class="fi fi-brands-instagram"></i
+				></a>
+				<a href="https://www.facebook.com/www.acalu.com.br/" target="_blank"
+					><i class="fi fi-brands-facebook"></i
+				></a>
+			</div>
+		</footer>
+		<!-- Script -->
+		<script src="/js/script.js"></script>
+	</body>
+</html>

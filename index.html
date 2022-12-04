@@ -1,0 +1,234 @@
+<!-- inicioGlobal -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Css global -->
+		<link rel="stylesheet" href="/globalStyle.css" />
+		<!-- Css da pagina -->
+		<link rel="stylesheet" href="/styles/paginaInicial.css" />
+		<!-- Css do SwiperJS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+		/>
+		<!-- Icones -->
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<!-- FavIcon -->
+		<link
+			rel="shortcut icon"
+			href="/images/zyro-image-removebg-re.ico"
+			type="image/x-icon"
+		/>
+		<title>A.Calú</title>
+	</head>
+	<body>
+		<header>
+			<img src="/images/zyro-image-removebg re.png" alt="A.calú" />
+		</header>
+		<nav>
+			<!-- Menu -->
+			<a href="#">Inicio</a>
+			<div id="serviços">
+				<a> Serviços</a>
+				<!-- Menu Dropdown -->
+				<div id="dropdown">
+					<a href="/pages/serviço.html">Serviços</a>
+					<a href="#">Serviços Prestados</a>
+				</div>
+			</div>
+			<a href="/pages/acesso.html">Suporte Remoto</a>
+			<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			<!-- Menu Mobile -->
+			<div id="menuMobile">
+				<i onclick="abrirMenu()" class="fi fi-rr-menu-burger"></i>
+				<a class="orçamento" href="/pages/orçamento.html"></a>
+			</div>
+		</nav>
+		<div id="menuAtivo">
+			<a id="fechar" onclick="fecharMenu()"> <i class="fi fi-br-x"></i></a>
+			<div id="conteudo">
+				<a href="#">Inicio</a>
+				<a id="serviçosMobile">Serviços</a>
+				<a class="serviçoFilho" href="/pages/serviço.html">Serviços</a>
+				<a class="serviçoFilho" href="#">Serviços Prestados</a>
+				<a href="/pages/acesso.html">Suporte Remoto</a>
+				<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			</div>
+		</div>
+		<!-- fimGlobal -->
+		<!-- Conteudo Pricipal -->
+		<main>
+			<!-- Icone do WhatsApp -->
+			<a
+				href="https://api.whatsapp.com/send?phone=5511972941977&text=Ol%C3%A1%2C%20Gostaria%20de%20um%20Or%C3%A7amento%20"
+				><span id="whats"><i class="fi fi-brands-whatsapp"></i></span
+			></a>
+			<!-- Carrocel do SwiperJS -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/images/placeholder1.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/images/placeholder2.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/images/placeholder3.jpg" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- Chamada -->
+			<div id="calltoaction">
+				<h1>Sua Segurança Em Primeiro Lugar</h1>
+				<p>
+					A A.Calú oferece o melhor serviço de segurança do mercado com atendimento
+					ao cliente 24 horas trabalhando com as tecnologias mais recentes para
+					sempre prover a melhor segurança.
+				</p>
+				<a class="orçamento" href="/pages/orçamento.html">Faça Um Orçamento</a>
+			</div>
+			<!-- Sobre -->
+			<div id="empresa">
+				<div id="sobre">
+					<div id="conteudo">
+						<h1>A Empresa</h1>
+						<hr />
+						<p>
+							A.Calu Segurança está no mercado da segurança eletrônica desde 2015 em
+							busca de atender a demanda de serviços existentes com uma equipe de
+							profissionais treinados.
+						</p>
+						<p>
+							Planejamos e implantamos projetos que atendem a necessidade do cliente,
+							integrando soluções inteligentes e seguras. Inicialmente nosso principal
+							objetivo é qualidade com segurança !
+						</p>
+						<p id="lest">
+							Seu fundador após grande período se capacitando tem intenção de se
+							destacar no mercado !
+						</p>
+					</div>
+				</div>
+				<div id="img">
+					<img src="/images/zyro-image (1).png" alt="" />
+				</div>
+			</div>
+			<!-- Beneficios -->
+			<div id="beneficios">
+				<h1>Beneficios</h1>
+				<p>
+					Ao escolher a A Calú para o seu negocio você ganha os seguintes beneficios
+				</p>
+				<!-- Primeira Fileira de icones -->
+				<div id="icones">
+					<div class="icone">
+						<img src="/images/suporte-ao-cliente.png" />
+						<p>Suporte 24Horas</p>
+					</div>
+					<div class="icone">
+						<img src="/images/controle-remoto.png" />
+						<p>Acesso Remoto</p>
+					</div>
+					<div class="icone" id="camera">
+						<img src="/images/camera-de-seguranca.png" />
+						<p>Instalação de Cameras</p>
+					</div>
+					<!-- Display pra mobile -->
+					<div class="icone" id="alarme">
+						<img src="/images/sereia.png" />
+						<p>Instalação de Alarmes</p>
+					</div>
+					<div class="icone" id="escudo">
+						<img src="/images/escudo-de-seguranca.png" />
+						<p>Sistema de Segurança</p>
+					</div>
+				</div>
+				<!-- Segunda Fileira de icones -->
+				<div id="icones2">
+					<div class="icone" id="alarme2">
+						<img src="/images/sereia.png" />
+						<p>Instalação de Alarmes</p>
+					</div>
+					<div class="icone" id="escudo2">
+						<img src="/images/escudo-de-seguranca.png" />
+						<p>Sistema de Segurança</p>
+					</div>
+				</div>
+				<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			</div>
+			<!-- Contato -->
+			<div id="contato">
+				<h1>Contato</h1>
+				<hr />
+				<!-- Informações -->
+				<div id="info">
+					<div id="contatos">
+						<h1>Contatos:</h1>
+						<p>(11) 972941977</p>
+						<p>(11) 992502093</p>
+					</div>
+					<div id="emails">
+						<h1>Emails:</h1>
+						<p>caluanderson@gmail.com</p>
+						<p>suporte@acalu.com.br</p>
+					</div>
+				</div>
+				<!-- Mapa do Google -->
+				<div id="mapa">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.6918855202493!2d-46.99702!3d-23.144934900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf30371aa9d4d1%3A0xe1548f356f8af5f0!2sR.%20Clara%20Ligieri%20da%20Silva%20-%20Parque%20Res.%20Almerinda%20Chaves%2C%20Jundia%C3%AD%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1669487777714!5m2!1spt-BR!2sbr"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+				<!-- Mais informações -->
+				<div id="localização">
+					<h1>Endereço</h1>
+					<p>Rua Clara Ligieri da Silva - Nº 777 Jundiaí - SP</p>
+				</div>
+				<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			</div>
+		</main>
+		<!-- Rodapé -->
+		<footer>
+			<p>© 2019 Acalu Segurança Eletrônica</p>
+			<div id="redeSocial">
+				<a
+					href="https://www.instagram.com/calu_anderson____/?next=%2F"
+					target="_blank"
+					><i class="fi fi-brands-instagram"></i
+				></a>
+				<a href="https://www.facebook.com/www.acalu.com.br/" target="_blank"
+					><i class="fi fi-brands-facebook"></i
+				></a>
+			</div>
+		</footer>
+		<!-- Script do SwiperJs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<!-- Script -->
+		<script src="/js/script.js"></script>
+	</body>
+</html>

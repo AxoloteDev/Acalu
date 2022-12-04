@@ -1,0 +1,380 @@
+/* Importações */
+
+@font-face {
+	font-family: "lexend";
+	src: url(/fonts/Lexend-Regular.ttf);
+}
+
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+/* Regras */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	font-size: 16px;
+	height: 2000px;
+}
+
+/* Variaveis */
+
+:root {
+	--corPrincipal: #0a0605;
+	--corSegundaria: #100a06;
+	--corDestaque: #e09f0f;
+	--fontTexto: "Segoe UI", sans-serif;
+	--fontPrincipal: "lexend", sans-serif;
+}
+
+/* Partes */
+
+/* Cabeçalho */
+
+header {
+	background-color: var(--corPrincipal);
+	height: 70vh;
+}
+
+header > img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Menu */
+
+nav {
+	display: flex;
+	background-color: var(--corPrincipal);
+	padding: 10px;
+	padding-top: 20px;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	z-index: 15;
+	height: 12vh;
+}
+
+nav > a {
+	font: normal 1.1em var(--fontTexto);
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+	margin-left: 30px;
+	transition: transform 0.5s;
+}
+
+nav > a:hover {
+	transform: scale(1.1);
+}
+
+nav > #serviços {
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+}
+
+nav > #serviços > a {
+	font: normal 1.1em var(--fontTexto);
+	color: white;
+	padding: 5px;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+nav > #serviços > a::after {
+	content: url(/images/seta.png);
+	position: relative;
+	top: 3px;
+	left: 5px;
+}
+
+nav > .orçamento {
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	padding: 10px;
+	width: 180px;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	top: -10px;
+	transition: transform 0.5s;
+	margin-left: 80px;
+}
+
+nav > .orçamento:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+/* Menu DropDown */
+
+#serviços:hover > #dropdown {
+	display: flex;
+	flex-direction: column;
+	z-index: 11;
+}
+
+#serviços > #dropdown {
+	display: none;
+	width: 180px;
+	background-color: #0a0605;
+	position: absolute;
+	top: 45px;
+	left: 30px;
+}
+
+#serviços > #dropdown > a {
+	display: block;
+	font: normal 1.1em var(--fontTexto);
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	text-align: left;
+	transition: background-color 0.5s;
+}
+
+#serviços > #dropdown > a:hover {
+	background-color: white;
+	color: #0a0605;
+}
+
+/* Menu Mobile */
+
+#menuMobile {
+	display: none;
+}
+
+.fi-rr-menu-burger {
+	color: #ffffffa9;
+	font-size: 35px;
+	float: right;
+	margin-right: 10px;
+	transition: color 0.3s;
+}
+
+.fi-rr-menu-burger:hover {
+	color: white;
+	cursor: pointer;
+}
+
+#menuAtivo {
+	background-color: var(--corPrincipal);
+	height: 100%;
+	width: 0;
+	z-index: 15;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: all 0.4s;
+}
+
+.fi-br-x {
+	color: #ffffffa9;
+	font-size: 25px;
+	transition: color 0.3s;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 25px;
+	margin-top: 20px;
+}
+
+.fi-br-x:hover {
+	color: white;
+	cursor: pointer;
+}
+
+#conteudo {
+	width: 400px;
+	margin: auto;
+	position: relative;
+	top: 25%;
+	transform: translateY(-25%);
+}
+
+#conteudo > a {
+	font: normal 1.4em var(--fontTexto);
+	color: #ffffffc4;
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin-top: 30px;
+	transition: color 0.3s;
+}
+
+#conteudo > a:hover {
+	color: white;
+}
+
+#conteudo > .orçamento {
+	background-color: var(--corDestaque);
+	font: 500 1.4em var(--fontPrincipal);
+	padding: 10px;
+	text-align: center;
+	width: 250px;
+	margin: auto;
+	margin-top: 30px;
+	transition: transform 0.5s;
+}
+
+#conteudo > .orçamento:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+#conteudo > #serviçosMobile {
+	color: #ffffffc4;
+}
+
+#conteudo > #serviçosMobile::after {
+	content: url(/images/seta.png);
+	position: relative;
+	top: 3px;
+	left: 7px;
+}
+
+#conteudo > .serviçoFilho {
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+/* Rodapé */
+
+footer {
+	background-color: var(--corPrincipal);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 20vh;
+	position: relative;
+	z-index: 12;
+}
+
+footer > p {
+	font: normal 1em var(--fontPrincipal);
+	color: white;
+	margin-left: 15px;
+}
+
+#redeSocial {
+	margin-right: 15px;
+}
+
+/* Icones do Rodapé */
+
+.fi-brands-instagram {
+	color: #ffffffaa;
+	font-size: 30px;
+	margin-right: 20px;
+	transition: color 0.5s;
+}
+
+.fi-brands-instagram:hover {
+	color: white;
+}
+
+.fi-brands-facebook {
+	color: #ffffffaa;
+	font-size: 30px;
+	transition: color 0.5s;
+}
+
+.fi-brands-facebook:hover {
+	color: white;
+}
+
+/* Icone do WhatsApp */
+
+.fi-brands-whatsapp {
+	position: fixed;
+	right: 3%;
+	bottom: 5%;
+	color: white;
+	font-size: 35px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.fi-brands-whatsapp:hover {
+	color: var(--corDestaque);
+	transform: scale(1.5);
+}
+
+/* Media query para a margin do menu */
+
+@media only screen and (max-width: 800px) {
+	nav > a {
+		margin-left: 20px;
+	}
+
+	nav > #orçamento {
+		margin-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	nav > #orçamento {
+		margin-left: 0px;
+	}
+
+	nav > a {
+		margin-left: 5px;
+	}
+
+	nav > #serviços > a {
+		margin-left: 5px !important;
+	}
+}
+
+/* Media query para mobile*/
+
+@media only screen and (max-width: 590px) {
+	header {
+		height: 60vh;
+	}
+
+	nav {
+		justify-content: space-between;
+	}
+
+	nav a {
+		display: none;
+	}
+
+	nav .orçamento {
+		display: inline-block;
+		text-align: center;
+		margin-left: 0;
+		margin-right: 50%;
+	}
+
+	nav > #menuMobile {
+		display: inline-block;
+	}
+
+	/* Ajuste no Rodapé para Mobile */
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	footer > p {
+		text-align: center;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}

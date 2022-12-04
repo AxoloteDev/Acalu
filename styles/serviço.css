@@ -1,0 +1,260 @@
+/* Importações */
+
+@font-face {
+	font-family: "lexend";
+	src: url(/fonts/Lexend-Regular.ttf);
+}
+
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+/* Regras */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	font-size: 16px;
+	height: 2000px;
+}
+
+/* Variaveis */
+
+:root {
+	--corPrincipal: #0a0605;
+	--corSegundaria: #100a06;
+	--corDestaque: #e09f0f;
+	--fontTexto: "Segoe UI", sans-serif;
+	--fontPrincipal: "lexend", sans-serif;
+}
+
+/* Partes */
+
+/* titulo */
+
+#titulo {
+	display: flex;
+	background-color: var(--corPrincipal);
+	justify-content: center;
+	flex-direction: column;
+}
+
+#titulo > h1 {
+	font: normal 2em var(--fontPrincipal);
+	text-align: center;
+	margin-top: 40px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+#titulo > p {
+	color: #ffffffaa;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 35px;
+	font: normal 1.2em var(--fontTexto);
+	max-width: 550px;
+}
+
+#titulo > img {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 80px;
+}
+
+/* Serviços */
+
+#serviço {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--corSegundaria);
+}
+
+.serviço1 {
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--corSegundaria);
+	align-items: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.serviços > .texto {
+	display: flex;
+}
+
+.texto > h1 {
+	color: var(--corDestaque);
+	font: normal 2em var(--fontPrincipal);
+	margin-top: 45px;
+	line-height: 48px;
+	text-align: center;
+	width: 300px;
+	margin: auto;
+}
+
+.texto > hr {
+	width: 250px;
+	margin-top: 5px;
+	height: 1px;
+	border-color: var(--corDestaque);
+	margin-bottom: 25px !important;
+	margin: auto;
+	text-align: center;
+}
+
+.texto > p {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 13px;
+	font: normal 1.1em var(--fontTexto);
+	color: #ffffffaa;
+	width: 400px;
+}
+
+.texto > #btn1 {
+	justify-content: center;
+	display: flex;
+	margin: auto;
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin-top: 25px;
+	transition: transform 0.5s;
+}
+
+.texto > a:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+#btn2 {
+	justify-content: center;
+	display: none;
+	margin: auto;
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin-top: 25px;
+	transition: transform 0.5s;
+}
+
+.texto > a:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+.img {
+	display: flex;
+}
+
+.img > img {
+	height: 180px;
+	margin-top: 30px;
+}
+
+#img2 {
+	display: none;
+}
+
+/* Call to action */
+
+#call {
+	background-color: var(--corPrincipal);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#call > h1 {
+	font: normal 2em var(--fontPrincipal);
+	text-align: center;
+	margin-top: 40px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+#call > p {
+	color: #ffffffaa;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 35px;
+	font: normal 1.2em var(--fontTexto);
+	max-width: 550px;
+}
+
+#call > a {
+	justify-content: center;
+	display: flex;
+	margin: auto;
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin-top: 25px;
+    margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+#call > a:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+	/* Ajuste no Titulo */
+
+	#titulo > p {
+		max-width: 350px;
+	}
+
+	#call > p {
+		max-width: 350px;
+	}
+
+	/* Ajuste no serviços */
+
+	.serviço1 {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.img > img {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#img1 {
+		display: none;
+	}
+
+	#img2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	/* Ajuste no botão de orçamento */
+
+	.texto > #btn1 {
+		display: none;
+	}
+
+	#btn2 {
+		display: flex;
+	}
+}

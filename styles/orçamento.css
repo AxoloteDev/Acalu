@@ -1,0 +1,291 @@
+/* Importações */
+
+@font-face {
+	font-family: "lexend";
+	src: url(/fonts/Lexend-Regular.ttf);
+}
+
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+/* Regras */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+/* Variaveis */
+
+:root {
+	--corPrincipal: #0a0605;
+	--corSegundaria: #100a06;
+	--corDestaque: #e09f0f;
+	--fontTexto: "Segoe UI", sans-serif;
+	--fontPrincipal: "lexend", sans-serif;
+}
+
+/* Partes */
+
+/* Chamada */
+
+#chamada {
+	background-color: var(--corPrincipal);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#chamada > h1 {
+	color: white;
+	font: normal 2em var(--fontPrincipal);
+	text-align: center;
+	margin-top: 40px;
+}
+
+#chamada > h2 {
+	color: #ffffffaa;
+	margin-top: 25px;
+	margin-bottom: 85px;
+	font: normal 1.3em var(--fontTexto);
+	text-align: center;
+}
+
+#chamada > p {
+	color: #ffffffaa;
+	text-align: center;
+	margin-bottom: 35px;
+	font: normal 1.2em var(--fontTexto);
+}
+
+strong {
+	color: white;
+}
+
+#chamada > a {
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	transition: transform 0.5s;
+}
+
+#chamada > a:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+/* Formulario */
+
+#formulario {
+	background-color: var(--corSegundaria);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#formulario > h1 {
+	color: var(--corDestaque);
+	font: normal 2em var(--fontPrincipal);
+	margin: 45px auto 0 auto;
+	line-height: 48px;
+	text-align: center;
+}
+
+#formulario > hr {
+	width: 350px;
+	height: 1px;
+	border-color: var(--corDestaque);
+	margin: 8px auto 50px auto;
+}
+
+form {
+	display: block;
+}
+
+#form1 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+#form2 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+#form3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.input > label {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	font: normal 1.1em var(--fontPrincipal);
+	color: var(--corDestaque);
+}
+
+.input > input {
+	width: 250px;
+	height: 30px;
+	font: normal 1em var(--fontTexto);
+	padding: 5px;
+}
+
+.input > input:focus {
+	border: none;
+	outline: 1px solid var(--corDestaque);
+}
+
+.input2 > label {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	font: normal 1.1em var(--fontPrincipal);
+	color: var(--corDestaque);
+}
+
+.input2 > input {
+	width: 400px;
+	height: 30px;
+	font: normal 1em var(--fontTexto);
+	padding: 5px;
+	margin: auto;
+}
+
+.input2 > input:focus {
+	border: none;
+	outline: 1px solid var(--corDestaque);
+}
+
+form > h1 {
+	color: var(--corDestaque);
+	font: normal 2em var(--fontPrincipal);
+	margin: 45px auto 0 auto;
+	line-height: 48px;
+	text-align: center;
+}
+
+form > h2 {
+	color: #e09e0fbf;
+	font: normal 1.1em var(--fontPrincipal);
+	margin: 0px auto 0 auto;
+	line-height: 26px;
+	text-align: center;
+	width: 400px;
+}
+
+form > hr {
+	width: 280px;
+	height: 1px;
+	border-color: var(--corDestaque);
+	margin: 2px auto 50px auto;
+}
+
+#check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#check2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkbox {
+	margin-bottom: 40px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.checkbox > label {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	font: normal 1.1em var(--fontPrincipal);
+	color: var(--corDestaque);
+}
+
+.checkbox > input {
+	margin: auto;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+textarea {
+	resize: none;
+	margin: auto;
+	display: block;
+	margin-bottom: 50px;
+	font: normal 1em var(--fontTexto);
+	padding: 5px;
+	max-width: 500px;
+}
+
+textarea:focus {
+	border: none;
+	outline: 1px solid var(--corDestaque);
+}
+
+#enviar {
+	display: block;
+	margin: auto;
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+
+#enviar:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+	/* Formulario para Mobile */
+
+	#form1 {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	#form2 {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.input > input {
+		display: block;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+}

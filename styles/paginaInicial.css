@@ -1,0 +1,517 @@
+/* Importações */
+
+@font-face {
+	font-family: "lexend";
+	src: url(/fonts/Lexend-Regular.ttf);
+}
+
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+/* Regras */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+/* Variaveis */
+
+:root {
+	--corPrincipal: #0a0605;
+	--corSegundaria: #100a06;
+	--corDestaque: #e09f0f;
+	--fontTexto: "Segoe UI", sans-serif;
+	--fontPrincipal: "lexend", sans-serif;
+}
+
+/* Partes */
+
+/* Carrocel SwiperJS */
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+	padding: 6px !important;
+	background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--corDestaque) !important;
+}
+
+/* Call to action */
+
+#calltoaction {
+	background-color: var(--corPrincipal);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#calltoaction > h1 {
+	color: white;
+	margin-top: 40px;
+	font: normal 2em var(--fontPrincipal);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#calltoaction > p {
+	color: #ffffffaa;
+	text-align: center;
+	width: 400px;
+	margin: auto;
+	font: normal 1em var(--fontTexto);
+	margin-bottom: 30px;
+	padding: 10px;
+	line-height: 24px;
+}
+
+#calltoaction > .orçamento {
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	transition: transform 0.5s;
+}
+
+#calltoaction > .orçamento:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+/* Sobre a Empresa */
+
+#empresa {
+	display: flex;
+	justify-content: space-between;
+}
+
+#sobre {
+	background-color: var(--corSegundaria);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+
+#conteudo {
+	margin-left: 60px;
+	position: relative;
+}
+
+#sobre h1 {
+	color: var(--corDestaque);
+	font: normal 2em var(--fontPrincipal);
+	margin-top: 45px;
+	line-height: 48px;
+	margin-left: 10px;
+}
+
+#sobre hr {
+	width: 250px;
+	margin-top: 5px;
+	height: 1px;
+	border-color: var(--corDestaque);
+	margin-bottom: 25px;
+	margin-left: 10px;
+}
+
+#conteudo > p {
+	color: #ffffffaa;
+	width: 300px;
+	font: normal 1em var(--fontTexto);
+	margin-bottom: 20px;
+	padding: 10px;
+	line-height: 24px;
+}
+
+#sobre #lest {
+	margin-bottom: 45px;
+}
+
+#img {
+	background-color: var(--corSegundaria);
+}
+
+#img img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Beneficios */
+
+#beneficios {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--corPrincipal);
+}
+
+#beneficios > h1 {
+	color: white;
+	font: normal 2em var(--fontPrincipal);
+	text-align: center;
+	margin-top: 30px;
+}
+
+#beneficios > p {
+	text-align: center;
+	color: #ffffffaa;
+	font: normal 1em var(--fontTexto);
+	margin-top: 20px;
+	margin-bottom: 70px;
+	line-height: 24px;
+}
+
+#beneficios > .orçamento {
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	transition: transform 0.5s;
+}
+
+#beneficios > .orçamento:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+#icones {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 70px;
+}
+
+.icone {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.icone img {
+	justify-content: center;
+	width: 130px;
+	margin: auto;
+}
+
+#camera {
+	position: relative;
+	top: 20px;
+}
+
+.icone > p {
+	color: var(--corDestaque);
+	font: normal 1.2em var(--fontPrincipal);
+	width: 200px;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 26px;
+}
+
+#alarme {
+	display: none;
+	margin-top: 60px;
+}
+
+#escudo {
+	display: none;
+	margin-top: 60px;
+}
+
+#icones2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 25px;
+}
+
+/* Contato */
+
+#contato {
+	background-color: var(--corSegundaria);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#contato > h1 {
+	color: var(--corDestaque);
+	font: normal 2em var(--fontPrincipal);
+	margin-top: 45px;
+	line-height: 48px;
+	text-align: center;
+}
+
+#contato > hr {
+	width: 250px;
+	margin-top: 5px;
+	height: 1px;
+	border-color: var(--corDestaque);
+	margin-bottom: 25px !important;
+	margin: auto;
+}
+
+#contato > .orçamento {
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	transition: transform 0.5s;
+}
+
+#contato > .orçamento:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
+
+/* Informações */
+
+#info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#info h1 {
+	color: white;
+	font: normal 2em var(--fontPrincipal);
+	text-align: center;
+	margin-top: 30px;
+}
+
+#contatos {
+	margin-bottom: 50px;
+}
+
+#contatos > p {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 13px;
+	font: normal 1.1em var(--fontTexto);
+	color: #ffffffaa;
+}
+
+#contatos > h1::before {
+	content: url(/images/livro-de-contato.png);
+	position: relative;
+	top: 3px;
+	left: -5px;
+}
+
+#emails {
+	margin-bottom: 50px;
+}
+
+#emails > p {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 13px;
+	font: normal 1.1em var(--fontTexto);
+	color: #ffffffaa;
+}
+
+#emails > h1::before {
+	content: url(/images/o-email.png);
+	position: relative;
+	top: 5px;
+	left: -5px;
+}
+
+#localização {
+	display: block;
+}
+
+#localização > h1 {
+	text-align: center;
+	color: white;
+	font: normal 2em var(--fontPrincipal);
+}
+
+#localização > p {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font: normal 1.1em var(--fontTexto);
+	color: #ffffffaa;
+	text-align: center;
+}
+
+#localização > h1::before {
+	content: url(/images/endereco.png);
+	position: relative;
+	top: 3px;
+	left: -5px;
+}
+
+/* Contato > Mapa */
+
+#mapa {
+	margin-bottom: 35px;
+}
+
+iframe {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+	z-index: 12;
+}
+
+
+/* MediaQuery */
+
+@media only screen and (max-width: 590px) {
+	/* Ajuste do carrocel para Mobile */
+
+	.swiper-slide img {
+		height: auto;
+	}
+	.swiper-pagination-bullet {
+		padding: 5px !important;
+	}
+
+	/* Ajuste no tamanho dos icones do Beneficio para Mobile */
+
+	.icone img {
+		width: 100px;
+	}
+
+	/* Ajuste no Display dos Contatos para Mobile */
+
+	#info {
+		display: block;
+	}
+
+	#contato > hr {
+		margin-bottom: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+	/* Ajuste do Sobre a Empresa */
+
+	#empresa {
+		display: flex;
+	}
+
+	#sobre {
+		justify-content: center;
+		width: 100%;
+	}
+
+	#conteudo {
+		width: 80%;
+		margin: 0;
+		margin: auto;
+		text-align: center;
+	}
+
+	#conteudo h1 {
+		margin-top: 30px;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	#conteudo p {
+		margin-right: 0 !important;
+		text-align: center;
+		width: auto;
+	}
+
+	#conteudo hr {
+		margin: auto;
+		margin-bottom: 30px;
+	}
+
+	#conteudo #lest {
+		margin-bottom: 60px;
+	}
+
+	#img {
+		display: none;
+	}
+
+	/* Beneficios */
+
+	#beneficios > p {
+		width: 400px;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	#beneficios > .orçamento {
+		margin-top: 0px !important;
+		position: relative;
+		top: -20px;
+	}
+
+	#icones2 {
+		margin-bottom: 0px !important;
+	}
+
+	/* Ajuste dos icones do Beneficio */
+
+	#camera {
+		position: relative;
+		top: 30px;
+	}
+
+	#camera > p {
+		position: relative;
+		top: -30px;
+	}
+
+	#alarme {
+		display: flex;
+	}
+
+	#escudo {
+		display: flex;
+	}
+
+	#alarme2 {
+		display: none;
+	}
+
+	#escudo2 {
+		display: none;
+	}
+}

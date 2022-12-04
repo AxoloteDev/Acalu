@@ -1,0 +1,204 @@
+<!-- inicioGlobal -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Css global -->
+		<link rel="stylesheet" href="/globalStyle.css" />
+		<!-- Css da pagina -->
+		<link rel="stylesheet" href="/styles/serviço.css" />
+		<!-- Css do SwiperJS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+		/>
+		<!-- Icones -->
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+		/>
+		<!-- FavIcon -->
+		<link
+			rel="shortcut icon"
+			href="/images/zyro-image-removebg-re.ico"
+			type="image/x-icon"
+		/>
+		<title>A.Calú</title>
+	</head>
+	<body>
+		<header>
+			<img src="/images/zyro-image-removebg re.png" alt="A.calú" />
+		</header>
+		<nav>
+			<!-- Menu -->
+			<a href="/index.html">Inicio</a>
+			<div id="serviços">
+				<a> Serviços</a>
+				<!-- Menu Dropdown -->
+				<div id="dropdown">
+					<a href="/pages/serviço.html">Serviços</a>
+					<a href="#">Serviços Prestados</a>
+				</div>
+			</div>
+			<a href="/pages/acesso.html">Suporte Remoto</a>
+			<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			<!-- Menu Mobile -->
+			<div id="menuMobile">
+				<i onclick="abrirMenu()" class="fi fi-rr-menu-burger"></i>
+				<a class="orçamento" href="/pages/orçamento.html"></a>
+			</div>
+		</nav>
+		<div id="menuAtivo">
+			<a id="fechar" onclick="fecharMenu()"> <i class="fi fi-br-x"></i></a>
+			<div id="conteudo">
+				<a href="/index.html">Inicio</a>
+				<a id="serviçosMobile">Serviços</a>
+				<a class="serviçoFilho" href="#">Serviços</a>
+				<a class="serviçoFilho" href="#">Serviços Prestados</a>
+				<a href="/pages/acesso.html">Suporte Remoto</a>
+				<a class="orçamento" href="/pages/orçamento.html">Orçamento</a>
+			</div>
+		</div>
+		<!-- Icone do WhatsApp -->
+		<a
+			href="https://api.whatsapp.com/send?phone=5511972941977&text=Ol%C3%A1%2C%20Gostaria%20de%20um%20Or%C3%A7amento%20"
+			><span id="whats"><i class="fi fi-brands-whatsapp"></i></span
+		></a>
+		<!-- fimGlobal -->
+		<main>
+			<!-- Apresentação -->
+			<div id="titulo">
+				<h1>Serviços</h1>
+				<p>
+					Abaixo encontrase uma lista de serviços oferecidos pela A.Calú para
+					garantir a melhor segurança ao seu negocio
+				</p>
+				<img src="/images/zyro-image-removebg re.png" />
+			</div>
+			<!-- serviços -->
+			<div id="serviço">
+				<div class="serviço1">
+					<div class="texto">
+						<h1>Monitoramento 24Horas</h1>
+						<hr />
+						<p>
+							Monitoramento 24hs com padrão de atendimento e equipe com preparo para
+							tratativa em situações reais, com acesso a imagens e controle remoto da
+							central de alarme.
+						</p>
+						<a id="btn1" href="/pages/orçamento.html">Orçamento</a>
+					</div>
+					<div class="img">
+						<img src="/images/suporte-ao-cliente.png" />
+					</div>
+					<a id="btn2" href="/pages/orçamento.html">Orçamento</a>
+				</div>
+				<div class="serviço1">
+					<div class="img" id="img1">
+						<img src="/images/escudo-de-seguranca.png" />
+					</div>
+					<div class="texto">
+						<h1>Sistema de Segurança</h1>
+						<hr />
+						<p>
+							Equipamento de qualidade e da mais nova tecnologia, garantindo a
+							segurança e proteção a todos, com comunicação direta a central de
+							monitoramento 24hs.
+						</p>
+						<div class="img" id="img2">
+							<img src="/images/escudo-de-seguranca.png" />
+						</div>
+						<a id="btn1" href="/pages/orçamento.html">Orçamento</a>
+					</div>
+					<a id="btn2" href="/pages/orçamento.html">Orçamento</a>
+				</div>
+				<div class="serviço1">
+					<div class="texto">
+						<h1>Instalação de Câmeras</h1>
+						<hr />
+						<p>
+							Padrão de instalação de câmeras com estudo e estratégia de gravação e
+							visualização através das câmeras para sempre garantir a melhor segurança.
+						</p>
+						<a id="btn1" href="/pages/orçamento.html">Orçamento</a>
+					</div>
+					<div class="img">
+						<img src="/images/camera-de-seguranca.png" />
+					</div>
+					<a id="btn2" href="/pages/orçamento.html">Orçamento</a>
+				</div>
+				<div class="serviço1">
+					<div class="img" id="img1">
+						<img src="/images/controle-remoto.png" />
+					</div>
+					<div class="texto">
+						<h1>Acesso Remoto</h1>
+						<hr />
+						<p>
+							Ao utilizar o controle de acesso ao seu negocio você automatiza o seu
+							negocio além de garantir a sua segurança, ideal para portas e portarias.
+						</p>
+						<div class="img" id="img2">
+							<img src="/images/controle-remoto.png" />
+						</div>
+						<a id="btn1" href="/pages/orçamento.html">Orçamento</a>
+					</div>
+					<a id="btn2" href="/pages/orçamento.html">Orçamento</a>
+				</div>
+				<div class="serviço1">
+					<div class="texto">
+						<h1>Instalação de Alarmes</h1>
+						<hr />
+						<p>
+							Instalação de alarmes com esduto e aprofundamento do local para garantir
+							o melhor posicionamento afim de obter um ambiente seguro.
+						</p>
+						<a id="btn1" href="/pages/orçamento.html">Orçamento</a>
+					</div>
+					<div class="img">
+						<img src="/images/sereia.png" />
+					</div>
+					<a id="btn2" href="/pages/orçamento.html">Orçamento</a>
+				</div>
+			</div>
+			<div id="call">
+				<h1>Ainda Indeciso?</h1>
+				<p>
+					Caso ainda esteja com duvida sobre a qualidade da A.Calú você pode conferir
+					nossos trabalhos reais com a opnião de nossos clientes
+				</p>
+				<a href="/">Confira mais Serviços</a>
+			</div>
+		</main>
+		<!-- Rodapé -->
+		<footer>
+			<p>© 2019 Acalu Segurança Eletrônica</p>
+			<div id="redeSocial">
+				<a
+					href="https://www.instagram.com/calu_anderson____/?next=%2F"
+					target="_blank"
+					><i class="fi fi-brands-instagram"></i
+				></a>
+				<a href="https://www.facebook.com/www.acalu.com.br/" target="_blank"
+					><i class="fi fi-brands-facebook"></i
+				></a>
+			</div>
+		</footer>
+		<!-- Script -->
+		<script src="/js/script.js"></script>
+	</body>
+</html>

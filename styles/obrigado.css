@@ -1,0 +1,81 @@
+/* Importações */
+
+@font-face {
+	font-family: "lexend";
+	src: url(/fonts/Lexend-Regular.ttf);
+}
+
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+/* Regras */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	font-size: 16px;
+	background-color: var(--corPrincipal);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Variaveis */
+
+:root {
+	--corPrincipal: #0a0605;
+	--corSegundaria: #100a06;
+	--corDestaque: #e09f0f;
+	--fontTexto: "Segoe UI", sans-serif;
+	--fontPrincipal: "lexend", sans-serif;
+}
+
+/* Partes */
+
+/* Principal */
+
+main > img {
+	width: 35%;
+	height: auto;
+	display: block;
+	margin: 50px auto 0px auto;
+}
+
+main > h1 {
+	color: white;
+	text-align: center;
+	font: normal 3em var(--fontPrincipal);
+	margin-top: 70px;
+}
+
+main > h2 {
+	color: white;
+	text-align: center;
+	font: normal 1.2em var(--fontTexto);
+	width: 500px;
+	margin:  25px auto;
+}
+
+main > a {
+	display: block;
+	background-color: var(--corDestaque);
+	font: 500 1.3em var(--fontPrincipal);
+	color: white;
+	padding: 10px;
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 45px;
+	transition: transform 0.5s;
+}
+
+main > a:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+}
